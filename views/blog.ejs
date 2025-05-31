@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog</h1>
+    <a href="/cadastrar">Criar novo post</a>
+    <div class="postagens">
+        <% posts.forEach(function(post) { %>
+            <div class="post">
+                <h2><%= post.titulo %></h2>
+                <p><strong><%= post.resumo %></strong></p>
+                <p><%= post.conteudo %></p>
+                <hr>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
