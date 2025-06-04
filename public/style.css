@@ -1,7 +1,98 @@
 body {
-  background-color: #f0f0f0;
-  text-align: center;
-  font-family: sans-serif;
+    background-color: rgba(0, 10, 20, 0.637);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+table {
+    width: 50%;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 5px;
+    text-align: center; 
+    border: 4px solid rgb(33, 33, 33);
+}
+
+th {
+    background-color: rgb(96, 44, 44);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: whitesmoke;
+}
+
+
+/*Barra lateral de pesquisa*/
+.navbar {
+    background-color:rgb(44, 28, 28);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 12px 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: left;
+}
+
+.navbar a {
+    padding: 12px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar a:not(:last-child) {
+    position: relative;
+}
+
+.navbar a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(104, 104, 104, 0), rgb(160, 160, 160), rgba(104, 104, 104, 0)); /* Gradiente para a linha */
+}
+
+.navbar a:hover {
+    background-color: rgb(135, 71, 71);
+    color: black;
+}
+
+
+.bloco {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form, .postagens {
